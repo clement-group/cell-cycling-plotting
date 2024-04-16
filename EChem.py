@@ -1,16 +1,19 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as pyplot
-import matplotlib.axes as axes
-import seaborn as sns
+import copy
 import os
 import re
-import copy
-import NewareNDA
-import electrochem as echem
-from formatting import format_plot
 from pathlib import Path
-from constants import MLABEL, CLABEL, LABEL, METADATA_UNITS, FTYPE, EXTENSION, LABELS_TEMPLATE, UNITS_TEMPLATE, TEMPLATES
+
+import electrochem as echem
+import matplotlib.axes as axes
+import matplotlib.pyplot as pyplot
+import NewareNDA
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+from constants import (CLABEL, EXTENSION, FTYPE, LABEL, LABELS_TEMPLATE,
+                       METADATA_UNITS, MLABEL, TEMPLATES, UNITS_TEMPLATE)
+from formatting import format_plot
 
 data_dir = '/Users/tylerpennebaker/Library/CloudStorage/Box-Box/Elias-Raphaële shared folder/LGES project/WP6/Cell cycling/data/'
 save_dir = '/Users/tylerpennebaker/Library/CloudStorage/Box-Box/Elias-Raphaële shared folder/LGES project/WP6/Cell cycling/data/'

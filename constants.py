@@ -6,7 +6,7 @@ from enum import Enum
 #    is not used to map an extension to a filetype.
 # 3) Create a mapping of the data table headers to standardized headers: add a dictionary entry to the LABELS_TEMPLATE enum
 # 4) Create a unit conversion table to standardize units: add a disctionary entry to the UNITS_TEMPLATE enum
-# 5) Add a template with aggregated information: to the TEMPLATES dictionary, add a dictionary entry containing data from 
+# 5) Add a template with aggregated information: to the TEMPLATES dictionary, add a dictionary entry containing data from
 #    LABELS_TEMPLATE and UNITS_TEMPLATE defined in steps 3 and 4.
 
 # metadata label names
@@ -72,17 +72,17 @@ class LABEL(Enum):
 class CLABEL(Enum):
     CYCLE_INDEX = "cycle index"
     CAP_C = 'charge capacity (mAh)'
-    CAP_D = 'discharge capacity (mAh)' 
+    CAP_D = 'discharge capacity (mAh)'
     GRAV_CAP_C = 'charge capacity (mAh/g)'
-    GRAV_CAP_D = 'discharge capacity (mAh/g)' 
-    AVG_V_C = 'avg. charge voltage (V)' 
+    GRAV_CAP_D = 'discharge capacity (mAh/g)'
+    AVG_V_C = 'avg. charge voltage (V)'
     AVG_V_D ='avg. discharge voltage (V)'
     ENERGY_C = 'charge energy (Wh)'
-    ENERGY_D = 'discharge energy (Wh)' 
+    ENERGY_D = 'discharge energy (Wh)'
     GRAV_ENERGY_C = 'charge energy density (Wh/kg)'
-    GRAV_ENERGY_D = 'discharge energy density (Wh/kg)' 
+    GRAV_ENERGY_D = 'discharge energy density (Wh/kg)'
     CE = 'coulombic effiency (%)'
-    V_HYS = 'voltage hysteresis (V)' 
+    V_HYS = 'voltage hysteresis (V)'
     ENERGY_EFF = 'energy efficiency (%)'
     CHARGE_STATUS = 'charge status'
     DISCHARGE_STATUS = 'discharge status'
@@ -129,7 +129,7 @@ class LABELS_TEMPLATE(Enum):
         'Discharge_Energy': LABEL.ENERGY_D.value,
         'Charge_Capacity': LABEL.CAP_C.value,
         'Discharge_Capacity': LABEL.CAP_D.value,
-        'Cycle_Index': LABEL.CYCLE_INDEX.value,   
+        'Cycle_Index': LABEL.CYCLE_INDEX.value,
         'Step_Index': LABEL.STEP_INDEX.value,
     }
     NEWARE = {
@@ -143,11 +143,11 @@ class LABELS_TEMPLATE(Enum):
         'Discharge_Energy(mWh)': LABEL.ENERGY_D.value,
         'Charge_Capacity(mAh)': LABEL.CAP_C.value,
         'Discharge_Capacity(mAh)': LABEL.CAP_D.value,
-        'Cycle': LABEL.CYCLE_INDEX.value,   
+        'Cycle': LABEL.CYCLE_INDEX.value,
         'Step': LABEL.STEP_INDEX.value,
         'Status': LABEL.STEP_TYPE.value,
     }
-    
+
     # For Neware xlsx files
     #NEWARE = {
         #'Total Time': LABEL.TEST_TIME.value,
@@ -160,7 +160,7 @@ class LABELS_TEMPLATE(Enum):
         #'DChg. Energy(Wh)': LABEL.ENERGY_D.value,
         #'Chg. Cap.(Ah)': LABEL.CAP_C.value,
         #'DChg. Cap.(Ah)': LABEL.CAP_D.value,
-        #'Cycle Index': LABEL.CYCLE_INDEX.value,   
+        #'Cycle Index': LABEL.CYCLE_INDEX.value,
         #'Step Index': LABEL.STEP_INDEX.value,
         #'Step Type': LABEL.STEP_TYPE.value,
     #}
@@ -226,7 +226,7 @@ class UNITS_TEMPLATE(Enum):
 #    is not used to map an extension to a filetype.
 # 3) Create a mapping of the data table headers to standardized headers: add a dictionary entry to the LABELS_TEMPLATE enum
 # 4) Create a unit conversion table to standardize units: add a dictionary entry to the UNITS_TEMPLATE enum
-# 5) Add a template with aggregated information: to the TEMPLATES dictionary, add a dictionary entry containing data from 
+# 5) Add a template with aggregated information: to the TEMPLATES dictionary, add a dictionary entry containing data from
 #    LABELS_TEMPLATE and UNITS_TEMPLATE defined in steps 3 and 4.
 TEMPLATES = {
     FTYPE.BIOLOGIC.value: {
@@ -243,7 +243,7 @@ TEMPLATES = {
     },
     FTYPE.UNIV_CSV.value: {
         'labels': LABELS_TEMPLATE.UNIV_CSV.value,
-        'unit_conversion': UNITS_TEMPLATE.UNIV_CSV.value,        
+        'unit_conversion': UNITS_TEMPLATE.UNIV_CSV.value,
     }
 }
 
@@ -269,10 +269,8 @@ METADATA_UNITS = {
     MLABEL.ELY.value : None,
     MLABEL.TEMP.value : 'C',
     MLABEL.CELL_TYPE.value : None,
-    MLABEL.EXPERIMENT.value : None, 
-    MLABEL.THEORETICAL_CAP.value : 'mAh/g',     
+    MLABEL.EXPERIMENT.value : None,
+    MLABEL.THEORETICAL_CAP.value : 'mAh/g',
 }
-
-
 
 MLABEL = MLABEL

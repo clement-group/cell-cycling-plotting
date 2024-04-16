@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 import seaborn as sns
+from matplotlib.ticker import AutoMinorLocator, MultipleLocator
 
-def format_plot(fig_size=(8,8), fsize=24, x_tick_spacing=None, y_tick_spacing=None, minor_tick_interval=2, tick_len=10, palette=None, 
+
+def format_plot(fig_size=(8,8), fsize=24, x_tick_spacing=None, y_tick_spacing=None, minor_tick_interval=2, tick_len=10, palette=None,
     num_palette_colors=None, minor_x=True, x_rot=None, set_integer_x_spacing=False,
     border_thickness=1.5, secondary_x=False, secondary_y=False, hide_y=False, forward_func=None, reverse_func=None, secondary_color='black'):
     # plot parameters
