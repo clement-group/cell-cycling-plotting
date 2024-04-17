@@ -118,8 +118,8 @@ class LABELS_TEMPLATE(Enum):
     }
     BIOLOGIC = {
         'time/s': LABEL.TEST_TIME.value,
-        'Ewe/V': LABEL.V.value,
-        'I/mA': LABEL.I.value,
+        'Ewe/V': LABEL.VOLTAGE.value,
+        'I/mA': LABEL.CURRENT.value,
         'dq/mA.h': LABEL.DQ.value,
         'Energy charge/W.h': LABEL.ENERGY_C.value,
         'Energy discharge/W.h': LABEL.ENERGY_D.value,
@@ -133,8 +133,8 @@ class LABELS_TEMPLATE(Enum):
         'Test_Time': LABEL.TEST_TIME.value,
         'Step_Time': LABEL.STEP_TIME.value,
         'DateTime': LABEL.DATE_TIME.value,
-        'Voltage': LABEL.V.value,
-        'Current': LABEL.I.value,
+        'Voltage': LABEL.VOLTAGE.value,
+        'Current': LABEL.CURRENT.value,
         'Charge_Energy': LABEL.ENERGY_C.value,
         'Discharge_Energy': LABEL.ENERGY_D.value,
         'Charge_Capacity': LABEL.CAP_C.value,
@@ -146,8 +146,8 @@ class LABELS_TEMPLATE(Enum):
         # 'Total Time': LABEL.TEST_TIME.value,
         'Time': LABEL.STEP_TIME.value,
         'Timestamp': LABEL.DATE_TIME.value,
-        'Voltage': LABEL.V.value,
-        'Current(mA)': LABEL.I.value,
+        'Voltage': LABEL.VOLTAGE.value,
+        'Current(mA)': LABEL.CURRENT.value,
         # 'Capacity(Ah)': LABEL.CAP.value,
         'Charge_Energy(mWh)': LABEL.ENERGY_C.value,
         'Discharge_Energy(mWh)': LABEL.ENERGY_D.value,
@@ -163,8 +163,8 @@ class LABELS_TEMPLATE(Enum):
     #     'Total Time': LABEL.TEST_TIME.value,
     #     'Time': LABEL.STEP_TIME.value,
     #     'Date': LABEL.DATE_TIME.value,
-    #     'Voltage(V)': LABEL.V.value,
-    #     'Current(A)': LABEL.I.value,
+    #     'Voltage(V)': LABEL.VOLTAGE.value,
+    #     'Current(A)': LABEL.CURRENT.value,
     #     'Capacity(Ah)': LABEL.CAP.value,
     #     'Chg. Energy(Wh)': LABEL.ENERGY_C.value,
     #     'DChg. Energy(Wh)': LABEL.ENERGY_D.value,
@@ -186,8 +186,8 @@ class UNITS_TEMPLATE(Enum):
     # Energy: W-h
     UNIV_CSV = {
         LABEL.TEST_TIME.value: 1,
-        LABEL.V.value: 1,
-        LABEL.I.value: 1,
+        LABEL.VOLTAGE.value: 1,
+        LABEL.CURRENT.value: 1,
         LABEL.DQ.value: 1,
         LABEL.ENERGY_C.value: 1,
         LABEL.ENERGY_D.value: 1,
@@ -198,8 +198,8 @@ class UNITS_TEMPLATE(Enum):
     }
     BIOLOGIC = {
         LABEL.TEST_TIME.value: 1,
-        LABEL.V.value: 1,
-        LABEL.I.value: 0.001,
+        LABEL.VOLTAGE.value: 1,
+        LABEL.CURRENT.value: 0.001,
         LABEL.DQ.value: 1,
         LABEL.ENERGY_C.value: 1,
         LABEL.ENERGY_D.value: 1,
@@ -210,8 +210,8 @@ class UNITS_TEMPLATE(Enum):
     }
     ARBIN = {
         LABEL.TEST_TIME.value: 1,
-        LABEL.V.value: 1,
-        LABEL.I.value: 1,
+        LABEL.VOLTAGE.value: 1,
+        LABEL.CURRENT.value: 1,
         LABEL.DQ.value: 1,
         LABEL.ENERGY_C.value: 1,
         LABEL.ENERGY_D.value: 1,
@@ -222,8 +222,8 @@ class UNITS_TEMPLATE(Enum):
     }
     NEWARE = {
         LABEL.TEST_TIME.value: 1,
-        LABEL.V.value: 1,
-        LABEL.I.value: 1,
+        LABEL.VOLTAGE.value: 1,
+        LABEL.CURRENT.value: 1,
         LABEL.DQ.value: 1,
         LABEL.ENERGY_C.value: 1,
         LABEL.ENERGY_D.value: 1,
